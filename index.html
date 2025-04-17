@@ -12,24 +12,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <!-- css -->
      <link rel="stylesheet" href="css/main.css">
+     <!-- favicon -->
+     <link rel="icon" type="image/x-icon" href="./img/logo.svg">
 </head>
 <body>
-    <nav>
-        <a href="" class="nav__logo"><img src="" alt=""></a>
+    <nav class="nav">
+        <a href="" class="nav__logo"><img src="./img/logo.svg" alt="Logo Firmy"></a>
         <div class="nav__items">
             <a href="" class="nav__item">O mnie</a>
             <a href="" class="nav__item">Oferta</a>
-            <a href="" class="nav__item">Kontakt</a>
+            <a href="" class="nav__item nav__item--call-btn--transparent">Kontakt</a>
+            <a href="" class="nav__item nav__item--call-btn nav__item--call-btn">Zapisz się</a>
         </div>
     </nav>
-    <header>
-
+    <header class="header section">
+        <img src="./img/ziutek.png" alt="Trener Personalny" class="header__img">
+        <h1 class="header__heading">Trener Personalny</h1>
+        <p class="header__text">Zacznij trenować pod opieką profesjonalisty</p>
+        <a href="#offers" class="header__btn">Poznaj ofertę</a>
+        <a href="#about-me" class="header__slide-down"><i class="fa-solid fa-arrow-down"></i></a>
     </header>
     <main>
-        <section class="about-me">
-            <p class="about-me__title">O mnie</p>
+        <section class="about-me section">
+            <h2 class="section-heading">O mnie</h2>
+            <p class="about-me__title">Twoja forma – moja misja!</p>
+            <p class="about-me__text">Cześć! Nazywam się [Imię i Nazwisko] i jestem certyfikowanym trenerem personalnym z [X] lat doświadczenia. Pomagam moim podopiecznym osiągać ich cele – czy to budowa masy mięśniowej, redukcja tkanki tłuszczowej, czy poprawa ogólnej kondycji.</p>
+            <p class="about-me__text">Mój trening to coś więcej niż tylko ćwiczenia – to indywidualne podejście, dostosowane plany i motywacja, która nie pozwoli Ci się poddać. Razem zbudujemy formę, o jakiej zawsze marzyłeś!</p>
             
         </section>
+        <section id="offers" class="offers"></section>
     </main>
     <footer></footer>
 </body>
