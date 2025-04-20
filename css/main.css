@@ -103,7 +103,7 @@ section {
 }
 .header__heading {
   color: #eee;
-  font-size: 7.2em;
+  font-size: 6.2em;
 }
 .header__text {
   color: #eee;
@@ -159,16 +159,24 @@ section {
   color: #eee;
 }
 
+@media (max-width: 992px) {
+  .header__heading {
+    font-size: 4.8em;
+  }
+  .header__text {
+    font-size: 2em;
+  }
+}
 @media (max-width: 768px) {
   .nav__logo img {
     width: 100px;
     height: 100px;
   }
   .header__heading {
-    font-size: 4.8em;
+    font-size: 4em;
   }
   .header__text {
-    font-size: 2.4em;
+    font-size: 1.8em;
   }
 }
 @media (max-width: 576px) {
@@ -177,25 +185,32 @@ section {
   }
   .nav__burger-icon {
     display: block;
+    font-size: 1.8em;
   }
   .nav__logo img {
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
   }
   .nav__items {
     background-color: #333;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    left: 0px;
+    left: 0;
     top: 100px;
     width: 100%;
+  }
+  .nav__item {
+    display: none;
+  }
+  .active .nav__item {
+    display: block;
   }
   .header__heading {
     font-size: 3.6em;
   }
   .header__text {
-    font-size: 2em;
+    font-size: 1.4em;
   }
   .header__btn {
     font-size: 1.4em;
